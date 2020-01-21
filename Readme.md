@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Сергей Шалыгин](https://up.htmlacademy.ru/htmlcss/27/user/1329999).
-* Наставник: `Неизвестно`.
+- Студент: [Сергей Шалыгин](https://up.htmlacademy.ru/htmlcss/27/user/1329999).
+- Наставник: [Ксения Григорьева](https://htmlacademy.ru/profile/arctic_pie).
 
 ---
 
