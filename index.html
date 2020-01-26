@@ -9,7 +9,8 @@
 <body>
   <header>
     <nav>
-    <img src="img/index-logo.svg" width="#" height="#" alt="Логотип Седоны">
+      <!--Правильно ли разместил логотип.Логотип, как ссылка на главную страницу-->
+      <a href="index.html"><img src="img/index-logo.svg" width="#" height="#" alt="Логотип Седоны"></a>
       <ul>
         <li><a href="information.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
@@ -20,7 +21,8 @@
   </header>
   <main>
     <h1>Поиск жилья в Седоне</h1>
-     <div>
+    <!--Правильно ли подобрал тег для блока-->
+    <div>
       <p><b>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
       <p>Рассмотрим 5 причин, по которым Аризона лучше, чем Гранд Каньон!</p>
     </div>
@@ -28,12 +30,33 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
-    <h2><button type="button">Поиск гостиницы в Седоне</button></h2>
+    <h2>Поиск гостиницы в Седоне</h2>
+    <!--Формы даты и выбора количества челоек-->
     <ul>
-      <li><p>Дата заезда:</p></li>
-      <li><p>Дата выезда:</p></li>
-      <li><p>Взрослые:</p></li>
-      <li><p>Дети:</p></li>
+      <li>
+        <p>Дата заезда:</p>
+        <form>
+          <p><input type="date" name="calendar"></p>
+        </form>
+      </li>
+      <li>
+        <p>Дата выезда:</p>
+        <form>
+          <p><input type="date" name="calendar"></p>
+        </form>
+      </li>
+      <li>
+        <p>Взрослые:</p>
+        <form action="handler.php">
+          <p><input type="number" name="Человек" value="1" min="1" max="10" step="1"></p>
+        </form>
+      </li>
+      <li>
+        <p>Деты:</p>
+        <form action="handler.php">
+          <p><input type="number" name="Человек" value="1" min="1" max="10" step="1"></p>
+        </form>
+      </li>
       <li>
         <a href="#">
           <button type"button">Найти</button>
@@ -42,15 +65,17 @@
     </ul>
   </main>
   <footer>
-    <p>#visitsedona</p>
+    <p>#VISITSEDONA</p>
+    <div>
       <ul>
         <li><a href="#">Твиттер</a></li>
         <li><a href="#">Фейсбук</a></li>
         <li><a href="#">Ютуб</a></li>
       </ul>
+    </div>
     <p>
-      website by
-      <a href="https://htmlacademy.ru">html Academy</a>
+      WEBSITE BY
+      <a href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
 
