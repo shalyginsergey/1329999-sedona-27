@@ -14,12 +14,12 @@
         <li><a href="information.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li><a href="hotel.html">Гостиницы</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Поиск жилья в Седоне</h1>
+    <h1>welcome to Sedona</h1>
     <div>
       <p><b>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
       <p>Рассмотрим 5 причин, по которым Аризона лучше, чем Гранд Каньон!</p>
@@ -28,32 +28,34 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
-    <h2><button type="button">Поиск гостиницы в Седоне</button></h2>
-    <form>
+    <button type="button">Поиск гостиницы в Седоне</button>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-      <p><label for="arrival-date">Дата заезда:</label>
-        <input id="arrival-date" type="date" name="calendar"></p>
+      <div><label for="arrival-date">Дата заезда:</label>
+        <input id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
+        <button type="number"> Календарь</button></div>
+      <div><label for="departure-date">Дата выезда:</label>
+        <input id="departure-date" type="text" name="departure" value="4 июля 2017">
+        <button type="number"> Календарь</button></div>
 
-      <p><label for="departure-date">Дата выезда:</label>
-        <input id="departure-date" type="date" name="calendar"></p>
-
-      <p><label for="adults">Взрослые:</label>
-        <input id="adults" type="date" name="calendar"></p>
-
-      <p><label for="children">Дети:</label>
-        <input id="children" type="date" name="calendar"></p>
-
-      <a href="#">
-        <button type"submit">Найти</button></a>
-    </form>
+      <div><label for="adults-arrival-">Взрослые:</label>
+        <button>+</button>
+        <input id="adults-arrival" type="text" name="adults" value="2">
+        <button>-</button></div>
+      <div><label for="children">Дети:</label>
+        <button>+</button>
+        <input id="children" type="text" name="child" value="0">
+        <button>-</button> </div>
+      <button>Найти</button>
+      <form>
   </main>
   <footer>
     <p>#visitsedona</p>
-    <p>тел:+7(495) 666-02-46</p>
+    <a href="tel:+74956660246">тел:+7(495) 666-02-46</a>
     <ul>
-      <li><a href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter"></a></li>
-      <li><a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook"></a></li>
-      <li><a href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a></li>
+      <li><a href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter">twitter</a></li>
+      <li><a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook">facebook</a></li>
+      <li><a href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube">youtube</a></li>
     </ul>
     <p>
       website by
