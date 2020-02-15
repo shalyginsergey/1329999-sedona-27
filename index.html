@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Поиск жилья в Седоне</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="main-header">
+    <nav class="main-navigation">
       <img src="img/logo-sedona.svg" width="139" height="71" alt="Логотип Седоны">
-      <ul>
+      <ul class="site-navigaton">
         <li><a href="information.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
@@ -19,48 +22,53 @@
     </nav>
   </header>
   <main>
-    <h1>welcome to Sedona</h1>
+    <h1 class="visually-hidden">welcome to Sedona</h1>
     <div>
-      <p><b>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
-      <p>Рассмотрим 5 причин, по которым Аризона лучше, чем Гранд Каньон!</p>
+      <p class="desctiption"><b>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
+      <p class="advantage">Рассмотрим 5 причин, по которым Аризона лучше, чем Гранд Каньон!</p>
     </div>
-    <section>
-      <h2>Заинтересовались?</h2>
+    <section class="index-interest">
+      <h2 class="interest">Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
-    <button type="button">Поиск гостиницы в Седоне</button>
+    <button class="brown-button sedona-index" type="button">Поиск гостиницы в Седоне</button>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-      <div><label for="arrival-date">Дата заезда:</label>
-        <input id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
+      <div><label class="arrival-index label-arrival" for="arrival-date">Дата заезда:</label>
+        <input class="arrival-index input-arrival input" id="arrival-date" type="text" name="arrival"
+          value="24 апреля 2017">
         <button type="number"> Календарь</button></div>
-      <div><label for="departure-date">Дата выезда:</label>
-        <input id="departure-date" type="text" name="departure" value="4 июля 2017">
+      <div><label class="arrival-index label-departure" for="departure-date">Дата выезда:</label>
+        <input class="arrival-index input-departure input" id="departure-date" type="text" name="departure"
+          value="4 июля 2017">
         <button type="number"> Календарь</button></div>
 
-      <div><label for="adults-arrival-">Взрослые:</label>
+      <div><label class="arrival-index label-adults" for="adults-arrival-">Взрослые:</label>
         <button>+</button>
-        <input id="adults-arrival" type="text" name="adults" value="2">
+        <input class="arrival-index input-adults" id="adults-arrival" type="text" name="adults" value="2">
         <button>-</button></div>
-      <div><label for="children">Дети:</label>
+      <div><label class="arrival-index label-children" for="children">Дети:</label>
         <button>+</button>
-        <input id="children" type="text" name="child" value="0">
+        <input class="arrival-index input-children" id="children" type="text" name="child" value="0">
         <button>-</button> </div>
-      <button>Найти</button>
+      <button class="button-find">Найти</button>
       <form>
   </main>
-  <footer>
-    <p>#visitsedona</p>
-    <a href="tel:+74956660246">тел:+7(495) 666-02-46</a>
-    <ul>
-      <li><a href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter">twitter</a></li>
-      <li><a href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="facebook">facebook</a></li>
-      <li><a href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube">youtube</a></li>
+  <footer class="main-footer">
+    <p class="footer-tegs">#visitsedona</p>
+    <a class="footer-contacts" href="tel:+74956660246">тел:+7(495) 666-02-46</a>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#"><img src="img/twitter.svg" width="46" height="48" alt="twitter">twitter</a>
+      </li>
+      <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="46" height="48"
+            alt="facebook">facebook</a></li>
+      <li><a class="social-button" href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube">youtube</a>
+      </li>
     </ul>
     <p>
       website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="114" height="40"
-          alt="Интенстив академии"></a>
+      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+          width="114" height="40" alt="Интенстив академии"></a>
     </p>
   </footer>
 
