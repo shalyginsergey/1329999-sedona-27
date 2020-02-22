@@ -12,8 +12,10 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <img src="img/logo-sedona.svg" width="139" height="71" alt="Логотип Седоны">
-      <ul class="site-navigaton">
+      <a class="header-logo">
+        <img src="img/logo-sedona.svg" width="139" height="71" alt="Логотип Седоны">
+      </a>
+      <ul class="site-navigation">
         <li><a href="information.html">Информация</a></li>
         <li><a href="media.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
@@ -21,38 +23,39 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">welcome to Sedona</h1>
-    <div>
-      <p class="desctiption"><b>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
-      <p class="advantage">Рассмотрим 5 причин, по которым Аризона лучше, чем Гранд Каньон!</p>
+    <div class="features">
+      <p class="features-item1"><b>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
+      <p class="features-item2">Рассмотрим 5 причин, по которым Аризона лучше, чем Гранд Каньон!</p>
     </div>
-    <section class="index-interest">
-      <h2 class="interest">Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <section class="info">
+      <h2 class="info-question">Заинтересовались?</h2>
+      <p class="info-offers">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
     </section>
-    <button class="brown-button sedona-index" type="button">Поиск гостиницы в Седоне</button>
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <button class="button-brown" type="button">Поиск гостиницы в Седоне</button>
+    <div>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-      <div><label class="arrival-index label-arrival" for="arrival-date">Дата заезда:</label>
-        <input class="arrival-index input-arrival input" id="arrival-date" type="text" name="arrival"
-          value="24 апреля 2017">
-        <button type="number"> Календарь</button></div>
-      <div><label class="arrival-index label-departure" for="departure-date">Дата выезда:</label>
-        <input class="arrival-index input-departure input" id="departure-date" type="text" name="departure"
-          value="4 июля 2017">
-        <button type="number"> Календарь</button></div>
+        <div><label class="form-label" for="arrival-date">Дата заезда:</label>
+          <input class="form-list" id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
+          <button type="number"> Календарь</button></div>
+        <div><label class="form-label" for="departure-date">Дата выезда:</label>
+          <input class="form-list" id="departure-date" type="text" name="departure" value="4 июля 2017">
+          <button type="number"> Календарь</button></div>
 
-      <div><label class="arrival-index label-adults" for="adults-arrival-">Взрослые:</label>
-        <button>+</button>
-        <input class="arrival-index input-adults" id="adults-arrival" type="text" name="adults" value="2">
-        <button>-</button></div>
-      <div><label class="arrival-index label-children" for="children">Дети:</label>
-        <button>+</button>
-        <input class="arrival-index input-children" id="children" type="text" name="child" value="0">
-        <button>-</button> </div>
-      <button class="button-find">Найти</button>
-      <form>
+        <div><label class="form-label" for="adults-arrival-">Взрослые:</label>
+          <button>+</button>
+          <input class="form-list" id="adults-arrival" type="text" name="adults" value="2">
+          <button>-</button></div>
+        <div><label class="form-label" for="children">Дети:</label>
+          <button>+</button>
+          <input class="form-list" id="children" type="text" name="child" value="0">
+          <button>-</button> </div>
+        <button class="button">Найти</button>
+        <form>
+    </div>
   </main>
   <footer class="main-footer">
     <p class="footer-tegs">#visitsedona</p>
@@ -65,9 +68,9 @@
       <li><a class="social-button" href="#"><img src="img/youtube.svg" width="46" height="48" alt="youtube">youtube</a>
       </li>
     </ul>
-    <p>
+    <p class="copyright">
       website by
-      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+      <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
           width="114" height="40" alt="Интенстив академии"></a>
     </p>
   </footer>
