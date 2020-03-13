@@ -43,7 +43,8 @@ a {
 
 /* header*/
 /*для сетки*/
-.main-header {}
+.main-header {
+}
 
 main {
   flex-grow: 1;
@@ -123,7 +124,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  max-height: 215px;
+  min-height: 215px;
 }
 
 .header-banner-welcome {
@@ -142,10 +143,6 @@ main {
   position: absolute;
   bottom: -2px;
   left: -1px;
-}
-
-.visually-hidden {
-  visibility: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -195,7 +192,6 @@ main {
 .grey-back {
   min-height: 256px;
   background-color: #eeeeee;
-  ;
   display: flex;
 }
 
@@ -207,7 +203,6 @@ main {
   align-items: center;
   padding-top: 50px;
   padding-bottom: 64px;
-
 }
 
 .blue-back {
@@ -289,12 +284,13 @@ main {
 
 .button {
   min-width: 65px;
+  width: 100%;
   color: #ffffff;
   background-color: #81b3d2;
   font-size: 21px;
   text-align: center;
   text-transform: uppercase;
-  padding: 15px 190px;
+  padding: 15px 20px;
 }
 
 .button:hover {
@@ -315,14 +311,17 @@ main {
 }
 
 .button-brown {
+  width: 100%;
+  max-width: 568px;
   min-width: 289px;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
   background-color: #766357;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 20px 140px;
+  padding: 33px 55px;
+  border: none;
 }
 
 .button-brown-2 {
@@ -331,6 +330,8 @@ main {
   font-size: 14px;
   line-height: 21px;
   padding: 7px 16px 7px 16px;
+  color: #ffffff;
+  background-color: #766357;
 }
 
 .button-brown:hover {
@@ -344,50 +345,85 @@ main {
 
 .form {
   background-color: #ffffff;
-}
-
-.form-location {
-  text-align: center;
-}
-
-.form-list::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  width: 21px;
-  height: 22px;
-  background-color: red;
+  padding: 55px;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  min-width: 100%;
 }
 
 .container-form {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   min-width: 568px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  outline: solid red;
+  flex-direction: column-reverse;
+}
+
+.map {
+  margin-top: -395px;
+  margin-bottom: -118px;
+  background-color: #177245;
+}
+
+.button-plus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-left: -4px;
+}
+
+.button-minus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-right: -4px;
+}
+
+.less {
+  width: 12px;
+  height: 3px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.more {
+  width: 11px;
+  height: 11px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.less:hover,
+.more:hover {
+}
+
+.form-location {
+  display: flex;
+  flex-direction: column;
 }
 
 .container-form-position {
   display: flex;
-  outline: solid green;
-  min-width: 568px;
+  width: 568px;
   align-self: center;
 }
 
 .form-list {
-  min-width: 346px;
+  width: 306px;
+  height: 38px;
   background-color: #f2f2f2;
   line-height: 26px;
   position: relative;
+  border: none;
+  margin-bottom: 30px;
 }
 
 .form-list-1 {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
+  border: none;
+  margin-bottom: 54px;
 }
 
 .form-list:hover {
@@ -397,6 +433,27 @@ main {
 .form-list:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+.form-label-1 {
+  margin-right: 21px;
+}
+
+.form-label-2 {
+  margin-right: 17px;
+}
+
+.form-label-3 {
+  margin-right: 41px;
+}
+
+.form-label-4 {
+  margin-right: 27px;
+}
+
+.form-line-3 {
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -437,7 +494,6 @@ main {
 }
 
 .card-container-3 {
-  outline: solid red;
   display: flex;
   justify-content: space-between;
   min-height: 87px;
@@ -469,9 +525,6 @@ main {
   color: rgba(0, 0, 0, 0.3);
 }
 
- 
-
-
 .card-name-filters {
   font-size: 21px;
   margin-top: 31px;
@@ -486,24 +539,33 @@ main {
   margin-right: 40px;
 }
 
+.card-name-filters span {
+  padding-left: 5px;
+}
 
 .card-items {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.3);
   line-height: 18px;
   font-weight: 400;
-  
+
   list-style: none;
+}
+
+.card-items:hover {
+  color: #81b3d2;
+}
+
+.card-items:active {
+  color: #000000;
 }
 
 .card-items-1 {
   margin-right: 33px;
-  
 }
 
 .card-items-2 {
   margin-right: 33px;
-  
 }
 
 .card-items-3 {
@@ -511,17 +573,53 @@ main {
 }
 
 .container-card-items {
-display: flex;
-align-items: center;
-  outline: solid green;
-}
-
-.icon-filters {
-  outline: solid salmon;
   display: flex;
   align-items: center;
 }
 
+.icon-filters {
+  display: flex;
+  align-items: center;
+  margin-right: 73px;
+}
+
+.button-calendar {
+  border: none;
+  background-color: #f2f2f2;
+  position: absolute;
+  padding: 8px 9px;
+  height: 38px;
+}
+
+.icon-calendar {
+  width: 21px;
+  height: 22px;
+  color: #cacaca;
+}
+
+.icon-calendar:hover {
+  color: #000000;
+}
+
+.icon-calendar:active {
+  color: #81b3d2;
+}
+
+.icon-up-dir {
+  margin-right: 12px;
+}
+
+.icon-color:hover {
+  fill: #000000;
+}
+
+.icon-color:active {
+  fill: #81b3d2;
+}
+
+/*.icon-up-dir:hover{
+  fill: red;
+}*/
 
 .card-description {
   font-family: "PT Sans";
@@ -560,6 +658,10 @@ align-items: center;
   color: #000000;
 }
 
+.main-footer-1 {
+  opacity: 0.9;
+}
+
 .footer-social li {
   list-style: none;
 }
@@ -576,54 +678,58 @@ align-items: center;
   align-items: center;
   height: 100%;
   flex-wrap: wrap;
-
 }
 
 .footer-contacts {
-  text-align: center;
   font-size: 21px;
   line-height: 26px;
-
   /*Для сетки*/
   margin: 0px;
   min-width: 223px;
-
   min-height: 48px;
 }
 
 /*Для сетки*/
+
+.copyright-container {
+  display: flex;
+}
 
 .copyright {
   line-height: 26px;
   font-family: "PT Sans";
   font-weight: 400;
   text-align: center;
-
   /*Для сетки*/
   min-height: 50px;
   margin: 0px;
+  display: flex;
+  align-items: center;
 
+  flex-wrap: wrap;
 }
 
 .copyright-website {
-  display: block;
   margin-right: 8px;
 }
 
-.copyright-logo {
-  color: #231f20;
+.copyrygight-logo {
+  width: 115px;
+  height: 41px;
+  margin-top: 5px;
 }
 
-.copyright-logo:hover {
-  background-color: #81b3d2;
-}
-}
-
-.copyright-logo:active {
-  color: #bdbbbc;
+.copyrygight-logo:hover {
+  fill: #81b3d2;
 }
 
 .container-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
