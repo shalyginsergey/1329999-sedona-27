@@ -43,8 +43,7 @@ a {
 
 /* header*/
 /*для сетки*/
-.main-header {
-}
+.main-header {}
 
 main {
   flex-grow: 1;
@@ -125,6 +124,7 @@ main {
   background-size: cover;
   width: 100%;
   min-height: 215px;
+  position: relative;
 }
 
 .header-banner-welcome {
@@ -282,6 +282,141 @@ main {
   padding-bottom: 50px;
 }
 
+.filter-range {
+  width: 295px;
+  position: absolute;
+  top: 87px;
+  left: 1390px;
+  color: #ffffff;
+}
+
+.price-controls {
+  position: relative;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 65px;
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+}
+
+.max-price {
+  transform: translateX(42px);
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 18px;
+  height: 18px;
+
+  background: #ababab;
+  border: 7px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
 .button {
   min-width: 65px;
   width: 100%;
@@ -350,6 +485,14 @@ main {
   min-width: 100%;
 }
 
+.form input[type="text"],
+.form input[type="number"] {
+  color: #000000;
+  line-height: 26px;
+  font-weight: 700;
+  padding-left: 13px;
+}
+
 .container-form {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   min-width: 568px;
@@ -394,8 +537,7 @@ main {
 }
 
 .less:hover,
-.more:hover {
-}
+.more:hover {}
 
 .form-location {
   display: flex;
@@ -497,6 +639,7 @@ main {
   display: flex;
   justify-content: space-between;
   min-height: 87px;
+  border-top: 1px solid #f2f2f2;
 }
 
 .card-cost-1 {
